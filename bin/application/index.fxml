@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="663.0" prefWidth="1040.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.IndexController">
+   <top>
+      <MenuBar prefHeight="0.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <left>
+      <Pane prefHeight="732.0" prefWidth="70.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="70.0" fitWidth="70.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../res/img/r.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="70.0" fitWidth="70.0" layoutY="522.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../res/img/b.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </left>
+   <right>
+      <Pane prefHeight="536.0" prefWidth="313.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="150.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../res/img/FIT.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="157.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../res/img/logoNLU.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="52.0" layoutY="607.0" text="Designer by Nguyễn Lê Phong - IT-NLU" textAlignment="CENTER" textFill="#112ff5" />
+            <Label contentDisplay="CENTER" layoutX="97.0" layoutY="178.0" text="Số quân của AI" textAlignment="CENTER" textFill="#dd0606" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label contentDisplay="CENTER" layoutX="91.0" layoutY="278.0" text="Số quân của bạn" textFill="#11ee2e">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </right>
+   <center>
+      <ImageView fitHeight="612.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../res/img/board.png" />
+         </image>
+      </ImageView>
+   </center>
+</BorderPane>
